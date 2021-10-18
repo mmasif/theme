@@ -4,8 +4,9 @@
     background-color: #6d6d7e;
     /* background: radial-gradient(circle at 50% 100%, #6d6d7e, #3b3b48); */
     /* background: radial-gradient(white, #CFEDFE); */
-    /* background-color:  #CFEDFE; */
-    background: radial-gradient(white, #0076BB);
+    background-color:  #CFEDFE;
+    background-image: url('../img/rigilLogoBG.png');
+    /* background: radial-gradient(white, #0076BB); */
     height: 100% !important;
 }
 
@@ -406,7 +407,8 @@ a.zocial  {
 
 .card-pf {
     border-radius: 3px;
-    background-color: #f5f8f9;
+    /* background-color: #f5f8f9; */
+    box-shadow: 0px 0px 10px;
     border: solid 1px #dce2e7;
     margin: 50px auto;
     box-sizing: border-box;
@@ -494,9 +496,10 @@ a.zocial  {
     background-color: #546E7A !important;
     border: 0px solid transparent;
     font-size: 13px;
-    background-image: linear-gradient(to bottom, #546E7A 0%, #546E7A 100%) !important;
-    height: 29px;
-    padding: 0;
+    /* background-image: linear-gradient(to bottom, #546E7A 0%, #546E7A 100%) !important; */
+    background-color: #0076BB !important;
+    height: 35px;
+    padding: 3px;
     border-radius: 2px;
     margin:0;
     text-shadow: none;   
@@ -515,20 +518,20 @@ a.zocial  {
 
 .btn-primary.focus {
   color: #fff;
-  background-color: #4a606b;
+  background-color: #005080;
   border:0;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #4a606b;
+  background-color: #005080 !important;
   border: 0;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #4a606b;
+  background-color: #005080;
   border:0;
 }
 .btn-primary:active:hover,
@@ -541,7 +544,7 @@ a.zocial  {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #fff;
-  background-color: #4a606b;
+  background-color: #005080;
   border: 0;
 }
 .btn-primary:active,
@@ -558,7 +561,7 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #4a606b;
+  background-color: #005080;
   border: 0;
 }
 .btn-primary .badge {
@@ -569,10 +572,10 @@ fieldset[disabled] .btn-primary.focus {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: #4a606b !important;
-    background-image: linear-gradient(to bottom, #4a606b 0%, #4a606b 100%) !important;
+    background-color: #005080 !important;
+    /* background-image: linear-gradient(to bottom, #4a606b 0%, #4a606b 100%) !important; */
     border: 0px solid transparent !important;
-    height: 29px;
+    height: 35px;
     box-shadow: 0px 0px 0px !important;
     padding: 0;
     margin:0;
@@ -580,10 +583,10 @@ fieldset[disabled] .btn-primary.focus {
 }
 
 .btn-primary:active:hover {
-    background-image: linear-gradient(to bottom, #4a606b 0%, #4a606b 100%) !important;
+    /* background-image: linear-gradient(to bottom, #4a606b 0%, #4a606b 100%) !important; */
     box-shadow: 0px 0px 0px !important;
-    background-color: #4a606b !important;
-    height: 29px;
+    background-color: #005080 !important;
+    height: 35px;
     border: 0px solid transparent !important;
     padding: 0;
     margin:0;
@@ -616,4 +619,53 @@ fieldset[disabled] .btn-primary.focus {
 
 .login-pf-page .login-pf-signup a {
   color:#0072ce !important;
+}
+
+.login-pf-accounts {
+    max-width: 500px !important;
+}
+
+.bgSocial {
+    border: 1px solid #0076BB !important;
+    background-color: white !important;
+    border-radius: 3px !important;
+    color: #0076BB !important;
+}
+
+.bgSocial:hover {
+    border: 1px solid #005080 !important;
+    background-color: #005080 !important;
+    color: white !important;
+}
+
+hr {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    border-top: 1px solid #e1dfdf !important;
+}
+
+.newInput {
+    background-color: white !important;
+    background: white !important;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid gray;
+    display: block;
+    width: 100%;
+    height: 35px;
+}
+.newInput:hover {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #005080;
+}
+.newInput:focus {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 2px solid #005080;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }

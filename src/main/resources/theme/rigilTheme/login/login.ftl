@@ -13,15 +13,18 @@
                     <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
 
                     <#if usernameEditDisabled??>
-                        <input tabindex="0" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled />
+                        <#--  <input tabindex="0" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled />  -->
+                        <input tabindex="0" id="username" class="newInput" name="username" value="${(login.username!'')}" type="text" disabled />
                     <#else>
-                        <input tabindex="0" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}"  type="text" autofocus autocomplete="off" />
+                        <#--  <input tabindex="0" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}"  type="text" autofocus autocomplete="off" />  -->
+                        <input tabindex="0" id="username" class="newInput"  name="username" value="${(login.username!'')}"  type="text" autofocus autocomplete="off" />
                     </#if>
                 </div>
 
                 <div class="${properties.kcFormGroupClass!}">
                     <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
-                    <input tabindex="0" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off" />
+                    <#--  <input tabindex="0" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off" />  -->
+                    <input tabindex="0" id="password" class="newInput" name="password" type="password" autocomplete="off" />
                 </div>
 
                 <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
@@ -53,10 +56,13 @@
         </#if>
         </div>
         <#if realm.password && social.providers??>
-            <div id="kc-social-providers" class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}">
+            <#--  <div id="kc-social-providers" class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}">  -->
+            <hr>
+            <div id="kc-social-providers">
+
                 <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 4>${properties.kcFormSocialAccountDoubleListClass!}</#if>">
                     <#list social.providers as p>
-                        <li class="${properties.kcFormSocialAccountListLinkClass!}"><a href="${p.loginUrl}" id="zocial-${p.alias}" class="zocial ${p.providerId}"> <span>${p.displayName}</span></a></li>
+                        <li class="${properties.kcFormSocialAccountListLinkClass!}"><a href="${p.loginUrl}" id="zocial-${p.alias}" class="zocial ${p.providerId} bgSocial"> <span>${p.displayName}</span></a></li>
                     </#list>
                 </ul>
             </div>
