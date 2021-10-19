@@ -33,9 +33,9 @@
                             <div class="checkbox">
                                 <label>
                                     <#if login.rememberMe??>
-                                        <input tabindex="0" id="rememberMe" name="rememberMe" type="checkbox" checked> ${msg("rememberMe")}
+                                        <input tabindex="0" id="rememberMe" name="rememberMe" type="checkbox" style="width: 16px; height: 16px; margin-top: 0px;" checked> ${msg("rememberMe")}
                                     <#else>
-                                        <input tabindex="0" id="rememberMe" name="rememberMe" type="checkbox"> ${msg("rememberMe")}
+                                        <input tabindex="0" id="rememberMe" name="rememberMe" type="checkbox" style="width: 16px; height: 16px; margin-top: 0px;"> ${msg("rememberMe")}
                                     </#if>
                                 </label>
                             </div>

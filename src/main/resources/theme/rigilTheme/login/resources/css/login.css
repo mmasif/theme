@@ -7,7 +7,10 @@
     background-color:  #CFEDFE;
     background-image: url('../img/rigilLogoBG.png');
     /* background: radial-gradient(white, #0076BB); */
-    height: 100% !important;
+    background-size: 125% !important;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    height: 100%;
 }
 
 .alert-error {
@@ -308,7 +311,7 @@ a.zocial  {
 @media (max-width: 767px) {
 
     .login-pf body {
-      background: white;
+      /* background: white; */
     }
 
     #kc-header {
@@ -464,7 +467,7 @@ a.zocial  {
   margin-bottom: 25px;
 }
 .login-pf-page .login-pf-social-link a {
-  padding: 2px 0;
+  /* padding: 2px 0; */
 }
 
 .login-pf-page.login-pf-page-accounts {
@@ -630,6 +633,8 @@ fieldset[disabled] .btn-primary.focus {
     background-color: white !important;
     border-radius: 3px !important;
     color: #0076BB !important;
+    padding: 3px 2px !important;
+    height: 35px;
 }
 
 .bgSocial:hover {
