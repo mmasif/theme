@@ -14,7 +14,7 @@
                     <label for="firstName" class="${properties.kcLabelClass!}">${msg("firstName")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="firstName" class="${properties.kcInputClass!}" onfocusout="trimSpace('firstName',false)"  name="firstName" value="${(register.formData.firstName!'')}" />
+                    <input type="text" id="firstName" class="newInput" onfocusout="trimSpace('firstName',false)"  name="firstName" value="${(register.formData.firstName!'')}" />
                 </div>
             </div>
 
@@ -23,7 +23,7 @@
                     <label for="lastName" class="${properties.kcLabelClass!}">${msg("lastName")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="lastName" class="${properties.kcInputClass!}" onfocusout="trimSpace('lastName',false)" name="lastName" value="${(register.formData.lastName!'')}" />
+                    <input type="text" id="lastName" class="newInput" onfocusout="trimSpace('lastName',false)" name="lastName" value="${(register.formData.lastName!'')}" />
                 </div>
             </div>
 
@@ -32,7 +32,7 @@
                     <label for="email" class="${properties.kcLabelClass!}">${msg("email")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="email" class="${properties.kcInputClass!}"  onfocusout="trimSpace('email',true)"  name="email" value="${(register.formData.email!'')}" autocomplete="email" />
+                    <input type="text" id="email" class="newInput"  onfocusout="trimSpace('email',true)"  name="email" value="${(register.formData.email!'')}" autocomplete="email" />
                 </div>
             </div>
 
@@ -42,7 +42,7 @@
                     <label for="username" class="${properties.kcLabelClass!}">${msg("username")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="username" class="${properties.kcInputClass!}"  onfocusout="trimSpace('username',false)"  name="username" value="${(register.formData.username!'')}" autocomplete="username" />
+                    <input type="text" id="username" class="newInput"  onfocusout="trimSpace('username',false)"  name="username" value="${(register.formData.username!'')}" autocomplete="username" />
                 </div>
             </div>
           </#if>
@@ -53,7 +53,7 @@
                     <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="password" id="password" class="${properties.kcInputClass!}" name="password" autocomplete="new-password"/>
+                    <input type="password" id="password" class="newInput" name="password" autocomplete="new-password"/>
                 </div>
             </div>
 
@@ -62,7 +62,7 @@
                     <label for="password-confirm" class="${properties.kcLabelClass!}">${msg("passwordConfirm")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="password" id="password-confirm" class="${properties.kcInputClass!}" name="password-confirm" />
+                    <input type="password" id="password-confirm" class="newInput" name="password-confirm" />
                 </div>
             </div>
             </#if>
@@ -77,7 +77,7 @@
 
             <div class="${properties.kcFormGroupClass!}">
                 <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
-                    <div class="${properties.kcFormOptionsWrapperClass!}">
+                    <div class="${properties.kcFormOptionsWrapperClass!} myTheme">
                         <span><a href="${url.loginUrl}">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
                     </div>
                 </div>

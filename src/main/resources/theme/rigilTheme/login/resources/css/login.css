@@ -5,11 +5,13 @@
     /* background: radial-gradient(circle at 50% 100%, #6d6d7e, #3b3b48); */
     /* background: radial-gradient(white, #CFEDFE); */
     background-color:  #CFEDFE;
-    background-image: url('../img/rigilLogoBG.png');
+    background: #686868;
+    /* background-image: url('../img/rigilLogoBG.png'); */
+    /* background-image: url('../img/rigilLogoBGBlur.png'); */
     /* background: radial-gradient(white, #0076BB); */
-    background-size: 125% !important;
+    /* background-size: 125% !important; */
     background-repeat: no-repeat;
-    background-position-y: -100px;
+    /* background-position-y: -100px; */
     height: 100%;
 }
 
@@ -416,7 +418,7 @@ a.zocial  {
     margin: 50px auto;
     box-sizing: border-box;
     padding: 0px 100px 20px !important;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 /*tablet*/
@@ -500,7 +502,6 @@ a.zocial  {
     border: 0px solid transparent;
     font-size: 13px;
     /* background-image: linear-gradient(to bottom, #546E7A 0%, #546E7A 100%) !important; */
-    background-color: #0076BB !important;
     height: 35px;
     padding: 3px;
     border-radius: 2px;
@@ -617,30 +618,15 @@ fieldset[disabled] .btn-primary.focus {
 }
 
 .login-pf-settings span a{
-	color:#0072ce !important;
+	/* color:#0072ce !important; */
 }
 
 .login-pf-page .login-pf-signup a {
-  color:#0072ce !important;
+  /* color:#0072ce !important; */
 }
 
 .login-pf-accounts {
     max-width: 500px !important;
-}
-
-.bgSocial {
-    border: 1px solid #0076BB !important;
-    background-color: white !important;
-    border-radius: 3px !important;
-    color: #0076BB !important;
-    padding: 3px 2px !important;
-    height: 35px;
-}
-
-.bgSocial:hover {
-    border: 1px solid #005080 !important;
-    background-color: #005080 !important;
-    color: white !important;
 }
 
 hr {
@@ -664,13 +650,77 @@ hr {
     border-top: 0;
     border-right: 0;
     border-left: 0;
-    border-bottom: 1px solid #005080;
 }
 .newInput:focus {
-    border-top: 0;
+    border-top: 0 !important;
     border-right: 0;
     border-left: 0;
-    border-bottom: 2px solid #005080;
     -webkit-box-shadow: none !important;
-    box-shadow: none !important;
+    box-shadow: none !important;    
 }
+
+.bgSocial {
+    background-color: white !important;
+    border-radius: 3px !important;
+    padding: 3px 2px !important;
+    height: 35px;
+}
+.bgSocial:hover {
+    color: white !important;
+}
+
+/* .blueTheme .mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background  {
+    background-color: green !important;
+} */
+
+:root {
+    --main-color: #005080;
+    --main-color-sub: #0076BB;
+
+    /* --main-color: #C54800; */
+    /* --main-color-sub: #F6610C; */
+
+    /* --main-color: #BA9500; */
+    /* --main-color-sub: #FFCD00; */
+
+     --main-color-red: #9C0014; 
+     --main-color-sub-red: #D7263D; 
+
+    /* --main-color: #066733; */
+    /* --main-color-sub: #2D8656; */
+
+    /* --main-color: #700098; */
+    /* --main-color-sub: #A81ADB; */
+}
+
+/* ///////////////////// Blue Theme */
+.newInput:hover {
+    border-bottom: 1px solid var(--main-color);
+}
+.newInput:focus {
+    border-bottom: 2px solid var(--main-color);
+}
+.bgSocial {
+    border: 1px solid var(--main-color-sub-red) !important;
+    color: var(--main-color-sub-red);
+}
+.bgSocial:hover {
+    border: 1px solid var(--main-color-red) !important;
+    background-color: var(--main-color-red) !important;
+    color: white !important;
+}
+.myTheme a {
+    color: var(--main-color-sub) !important;
+}
+.myTheme a:hover {
+    color: var(--main-color) !important;
+}
+.btn-primary {
+    background-color: var(--main-color-sub) !important;
+    background-image: none !important;
+}
+.btn-primary:hover {
+    background-color: var(--main-color) !important;
+}
+
+

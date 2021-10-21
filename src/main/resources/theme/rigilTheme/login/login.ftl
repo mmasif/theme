@@ -1,5 +1,5 @@
 <#import "template.ftl" as layout>
-<@layout.registrationLayout displayInfo=social.displayInfo displayWide=(realm.password && social.providers??); section>
+<@layout.registrationLayout displayInfo=social.displayInfo displayWide=(realm.password && social.providers??); section >
     <#if section = "header">
         <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
         <#--  ${msg("doLogIn")}  -->
@@ -31,7 +31,7 @@
                     <div id="kc-form-options">
                         <#if realm.rememberMe && !usernameEditDisabled??>
                             <div class="checkbox">
-                                <label>
+                                <label class="myCheckBox">
                                     <#if login.rememberMe??>
                                         <input tabindex="0" id="rememberMe" name="rememberMe" type="checkbox" style="width: 16px; height: 16px; margin-top: 0px;" checked> ${msg("rememberMe")}
                                     <#else>
@@ -41,7 +41,7 @@
                             </div>
                         </#if>
                         </div>
-                        <div class="${properties.kcFormOptionsWrapperClass!}">
+                        <div class="${properties.kcFormOptionsWrapperClass!} myTheme">
                             <#if realm.resetPasswordAllowed>
                                 <span><a tabindex="0" href="${url.loginResetCredentialsUrl}">${msg("doForgotPassword")}</a></span>
                             </#if>
@@ -70,7 +70,7 @@
       </div>
     <#elseif section = "info" >
         <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
-            <div id="kc-registration">
+            <div id="kc-registration" class="myTheme">
                 <span>${msg("noAccount")} <a tabindex="0" href="${url.registrationUrl}">${msg("doRegister")}</a></span>
             </div>
         </#if>
