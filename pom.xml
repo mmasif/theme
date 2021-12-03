@@ -2,13 +2,13 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <name>Keycloak StrataGem Theme</name>
+    <name>Keycloak Rigil Theme</name>
     <groupId>com.rigil</groupId>
-    <artifactId>keycloak-stratagem-theme</artifactId>
+    <artifactId>keycloak-rigil-theme</artifactId>
     <packaging>jar</packaging>
     <version>1.3.0</version>
 
     <build>
-        <finalName>strataGem</finalName>
+        <finalName>rigilTheme</finalName>
     </build>
 </project>

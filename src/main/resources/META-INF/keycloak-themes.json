@@ -1,6 +1,6 @@
 {
     "themes": [{
-        "name" : "strataGem",
+        "name" : "rigilTheme",
         "types": [ "login", "account", "admin" ]
     }]
-}
+}   
